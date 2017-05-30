@@ -25,7 +25,7 @@ if (navigator.geolocation) {
                 calculateDistance(startPos.coords.latitude, startPos.coords.longitude,
                     position.coords.latitude, position.coords.longitude);
         });
-    }
+    } 
 }
 else {
     console.log('Geolocation is not supported for this Browser/OS version yet.');
