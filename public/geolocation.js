@@ -24,6 +24,11 @@ if (navigator.geolocation) {
             document.getElementById('distance').innerHTML =
                 calculateDistance(startPos.coords.latitude, startPos.coords.longitude,
                     position.coords.latitude, position.coords.longitude);
+
+            var iDiv = document.createElement('div');
+            iDiv.innerHTML = position.coords.latitude + ", " + position.coords.longitude;
+            document.getElementsByTagName('body')[0].appendChild(iDiv);
+            
         });
     } 
 }
